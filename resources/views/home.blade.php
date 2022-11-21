@@ -8,21 +8,16 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
     <title>Giant Book Supplier</title>
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-</style>
-@extends('layouts.footer')
+@extends('layouts.header')
+
 <body>
 
 
-    @extends('layouts.body')
 
 
-
+    @extends('layouts.footer')
+    <h1>Hello World</h1>
 </body>
-@extends('layouts.header')
+
 
 </html>
