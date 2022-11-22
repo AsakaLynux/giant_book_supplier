@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [BookController::class, 'showBook']);
+// Route::get('/', [BookController::class, 'showBook']);
 
 Route::get('/book_detail', [BookController::class, 'showBookDetail']);
 
@@ -29,3 +30,5 @@ Route::get('/category', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/', [BookController::class, 'showAll']);

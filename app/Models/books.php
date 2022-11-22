@@ -8,8 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Books extends Model
 {
     use HasFactory;
-    protected $book = ['title', 'image', 'author'];
-    protected $bookDetail = ['title', 'image', 'author', 'synopsis'];
 
     public function publisher() {
         $this->belongsTo(Publisher::class);
