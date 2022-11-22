@@ -95,3 +95,11 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* Contact Page */
+.contactHeader {
+    background-color: grey;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+}
