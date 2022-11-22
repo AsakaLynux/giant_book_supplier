@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [BookController::class, 'show']);
+Route::get('/', [BookController::class, 'showBook']);
 
 Route::get('/book_detail', [BookController::class, 'showBookDetail']);
 
