@@ -12,6 +12,7 @@ class BookController extends Controller
         $book->title = 'Naruto';
         $book->image = 'adfadf';
         $book->author = 'kisimoto';
+        $book->save();
         return view('home', ['book' => $book]);
     }
     public function showBookDetail() {
@@ -20,6 +21,7 @@ class BookController extends Controller
         $book->image = 'adfadf';
         $book->author = 'kisimoto';
         $book->synopsis = 'asdkfhaskljgakljsdgh';
+        $book->save();
         return view('book_detail', ['book' => $book]);
     }
 }
