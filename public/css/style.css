@@ -23,7 +23,7 @@
     font-size: 13px;
     text-align: center;
     bottom: 0;
-    position: fixed;
+    /* position: fixed; */
 }
 /* Navbar container */
 .navbar {
@@ -61,7 +61,6 @@
     margin: 0; /* Important for vertical align on mobile phones */
   }
 
-  /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
   }
