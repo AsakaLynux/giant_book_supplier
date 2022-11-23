@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', [BookController::class, 'showBook']);
 
-Route::get('/book_detail', [BookController::class, 'showBookDetail']);
+// Route::get('/book_detail', [BookController::class, 'find']);
+
+Route::get('/book_detail/{id}', [BookController::class, 'find']);
+
+
+
 
 Route::get('/publisher', function () {
     return view('publisher');

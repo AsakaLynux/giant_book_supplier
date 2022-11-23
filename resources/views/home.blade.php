@@ -3,16 +3,18 @@
 @section('titleName', 'Giant Book Publisher')
 
 @section('content')
-    <h1>This is Home Page</h1>
-    <br>
     @foreach ($books as $book)
-        <h2>{{$book->title}}</h2>
-        <br>
-        <h2>{{$book->author}}</h2>
-        <br>
-        <h2>{{$book->synopsis}}</h2>
-        <br>
-        <h2>{{$book->year}}</h2>
-        <br>
+    <div class="card">
+        <img src={{$book->image}} alt="Avatar" style="width:100px">
+        <div class="container">
+          <h4><b>{{$book->title}}</b></h4>
+          <br>
+          <h4>By</h4>
+          <br>
+          <h4><b>{{$book->author}}</b></h4>
+          {{-- <p>Architect & Engineer</p> --}}
+        </div>
+        <a href="{{ url('/book_detail/'.$book->id) }}"><button>Detail</button></a>
+      </div>
     @endforeach
 @endsection

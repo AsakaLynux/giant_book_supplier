@@ -23,7 +23,7 @@
     font-size: 13px;
     text-align: center;
     bottom: 0;
-    /* position: fixed; */
+    position: absolute;
 }
 /* Navbar container */
 .navbar {
@@ -102,3 +102,14 @@
     padding-left: 10px;
     font-size: 20px;
 }
+
+/* Card */
+.card {
+    display: inline-block;
+    text-align: center;
+}
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
