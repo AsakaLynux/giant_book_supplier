@@ -24,8 +24,8 @@
           </button>
           <div class="dropdown-content">
             @foreach ($categories as $categorie)
-            <a href="">{{$categorie->name}}</a>
-
+            {{-- <a href="">{{$categorie->name}}</a> --}}
+            <a href="{{ url('/category/'.$categorie->id) }}">{{$categorie->name}}</a>
             @endforeach
           </div>
         </div>

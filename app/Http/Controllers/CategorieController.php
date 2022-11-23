@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 
 class CategorieController extends Controller
 {
-    public function showAll() {
+    public function category($id) {
+        $category = Categories::find($id);
         $categorie = Categories::all();
-        // dd($categorie);
-        return view('layouts.layout', ['categories' => $categorie]);
+        dd($category);
+        // return view('category')->with([
+        //     'categories-item' => $category,
+        //     'categories' => $categorie,
+        // ]);
     }
 }

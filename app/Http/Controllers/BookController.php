@@ -17,14 +17,15 @@ class BookController extends Controller
         ]);
 
     }
-    // public function showCategorie() {
-    //     $categorie = Categories::all();
-    //     return view('layouts.layout', ['categories'=>$categorie]);
-    // }
+
     public function find($id) {
 
         $book = Books::find($id);
+        $categorie = Categories::all();
         // dd($book);
-        return view('book_detail', ['books'=>$book]);
+        return view('book_detail')->with([
+            'books' => $book,
+            'categories' => $categorie
+        ]);
     }
 }
