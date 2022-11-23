@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\ContactController;
 use App\Models\Categories;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -32,9 +33,7 @@ Route::get('/publisher', function () {
 Route::get('/category/{id}', [CategorieController::class, 'index']);
 
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', [ContactController::class, 'showCategorie']);
 
 Route::get('/', [BookController::class, 'showAll']);
 
