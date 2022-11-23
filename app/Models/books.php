@@ -9,6 +9,8 @@ class Books extends Model
 {
     use HasFactory;
 
+    protected $table =  'books';
+
     public function publisher() {
         $this->belongsTo(Publisher::class);
     }

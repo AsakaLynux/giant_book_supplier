@@ -29,7 +29,8 @@ Route::get('/publisher', function () {
     return view('publisher');
 });
 
-Route::get('/category/{id}', [CategorieController::class, 'category']);
+Route::get('/category/{id}', [CategorieController::class, 'index']);
+
 
 Route::get('/contact', function () {
     return view('contact');
