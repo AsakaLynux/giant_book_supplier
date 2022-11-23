@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -36,3 +37,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/', [BookController::class, 'showAll']);
+
+

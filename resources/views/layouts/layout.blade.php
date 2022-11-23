@@ -23,9 +23,10 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/category">Category 1</a>
-            <a href="/category">Category 2</a>
-            <a href="/category">Category 3</a>
+            @foreach ($categories as $categorie)
+            <a href="">{{$categorie->name}}</a>
+
+            @endforeach
           </div>
         </div>
         <a href="/publisher">Publisher</a>
