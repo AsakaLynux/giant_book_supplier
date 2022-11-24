@@ -12,7 +12,7 @@ class Books extends Model
     protected $table =  'books';
 
     public function publisher() {
-        $this->belongsTo(Publisher::class);
+        $this->belongsTo('App\Models\Publisher');
     }
     public function categories() {
         $this->belongsToMany(Categories::class);

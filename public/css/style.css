@@ -23,7 +23,7 @@
     font-size: 13px;
     text-align: center;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 
 }
 /* Navbar container */
@@ -128,3 +128,17 @@
     /* text-align: center; */
     padding-left: 10px;
   }
+
+
+  /* Publisher page */
+  .publisher {
+    background-color: #dae6dd;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+
+  .publisher a {
+    color: black;
+    text-decoration: none;
+  }
+

@@ -3,7 +3,9 @@
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategorieController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PublisherController;
 use App\Models\Categories;
+use App\Models\Publisher;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -19,16 +21,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Route::get('/book_detail', [BookController::class, 'find']);
+
 
 Route::get('/book_detail/{id}', [BookController::class, 'find']);
 
 
 
 
-Route::get('/publisher', function () {
-    return view('publisher');
-});
+
+
+Route::get('/publisher', [PublisherController::class, 'showAll']);
+
 
 Route::get('/category/{id}', [CategorieController::class, 'index']);
 
