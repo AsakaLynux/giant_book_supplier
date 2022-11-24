@@ -15,94 +15,94 @@ class BookCategorySeeder extends Seeder
     public function run()
     {
         //
-        DB::table('book_categories')->insert([
+        DB::table('books_categories')->insert([
             [
-                'book_id' => 1,
-                'category_id' => 1
+                'books_id' => 1,
+                'categories_id' => 1
             ],
             [
-                'book_id' => 1,
-                'category_id' => 2
+                'books_id' => 1,
+                'categories_id' => 2
             ],
             [
-                'book_id' => 1,
-                'category_id' => 5
+                'books_id' => 1,
+                'categories_id' => 5
             ],
             [
-                'book_id' => 1,
-                'category_id' => 6
+                'books_id' => 1,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 1,
-                'category_id' => 7
+                'books_id' => 1,
+                'categories_id' => 7
             ],
             [
-                'book_id' => 2,
-                'category_id' => 1
+                'books_id' => 2,
+                'categories_id' => 1
             ],
             [
-                'book_id' => 2,
-                'category_id' => 2
+                'books_id' => 2,
+                'categories_id' => 2
             ],
             [
-                'book_id' => 2,
-                'category_id' => 3
+                'books_id' => 2,
+                'categories_id' => 3
             ],
             [
-                'book_id' => 2,
-                'category_id' => 6
+                'books_id' => 2,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 3,
-                'category_id' => 1
+                'books_id' => 3,
+                'categories_id' => 1
             ],
             [
-                'book_id' => 3,
-                'category_id' => 2
+                'books_id' => 3,
+                'categories_id' => 2
             ],
             [
-                'book_id' => 3,
-                'category_id' => 6
+                'books_id' => 3,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 3,
-                'category_id' => 7
+                'books_id' => 3,
+                'categories_id' => 7
             ],
             [
-                'book_id' => 4,
-                'category_id' => 1
+                'books_id' => 4,
+                'categories_id' => 1
             ],
             [
-                'book_id' => 4,
-                'category_id' => 2
+                'books_id' => 4,
+                'categories_id' => 2
             ],
             [
-                'book_id' => 4,
-                'category_id' => 6
+                'books_id' => 4,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 5,
-                'category_id' => 4
+                'books_id' => 5,
+                'categories_id' => 4
             ],
             [
-                'book_id' => 5,
-                'category_id' => 6
+                'books_id' => 5,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 6,
-                'category_id' => 1
+                'books_id' => 6,
+                'categories_id' => 1
             ],
             [
-                'book_id' => 6,
-                'category_id' => 2
+                'books_id' => 6,
+                'categories_id' => 2
             ],
             [
-                'book_id' => 6,
-                'category_id' => 6
+                'books_id' => 6,
+                'categories_id' => 6
             ],
             [
-                'book_id' => 6,
-                'category_id' => 7
+                'books_id' => 6,
+                'categories_id' => 7
             ],
         ]);
     }

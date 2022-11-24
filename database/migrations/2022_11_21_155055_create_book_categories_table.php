@@ -13,10 +13,10 @@ class CreateBookCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('book_categories', function (Blueprint $table) {
+        Schema::create('books_categories', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('book_id')->references('id')->on('books');
-            $table->foreignId('category_id')->references('id')->on('categories');
+            $table->foreignId('books_id')->references('id')->on('books');
+            $table->foreignId('categories_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

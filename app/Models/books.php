@@ -9,10 +9,8 @@ class Books extends Model
 {
     use HasFactory;
 
-    protected $table =  'books';
-
     public function publisher() {
-        $this->belongsTo('App\Models\Publisher');
+        $this->belongsTo(Publisher::class);
     }
     public function categories() {
         $this->belongsToMany(Categories::class);
