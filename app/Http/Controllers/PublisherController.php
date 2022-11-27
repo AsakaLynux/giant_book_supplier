@@ -17,4 +17,13 @@ class PublisherController extends Controller
             'publisher' => $getPublisher,
         ]);
     }
+
+    public function find($id) {
+        $publisher = Publisher::find($id);
+        $get = Categories::all();
+        return view('publisher_detail')->with([
+            'publisher' => $publisher,
+            'categories' => $get
+        ]);
+    }
 }

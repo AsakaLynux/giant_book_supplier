@@ -3,16 +3,15 @@
 @section('titleName', 'Giant Book Supplier')
 
 @section('content')
-    @foreach ($publisher as $x)
         <div class="publisher">
-            <img src={{$x->image}} alt="Avatar" style="width:200px">
-            <h2>{{$x->name}}</h2>
-            <h2>Address: {{$x->address}}</h2>
+            <img src={{$publisher->image}} alt="Avatar" style="width:200px">
+            <h2>{{$publisher->name}}</h2>
+            <h2>Address: {{$publisher->address}}</h2>
+            <h2>Phone: {{$publisher->phone}}</h2>
+            <h2>Email: {{$publisher->email}}</h2>
 
-            <a href="{{ url('/publisher_detail/'.$x->id) }}"><button>Detail</button></a>
-
-            {{-- <div class="cover">
-                @foreach($x->book as $y)
+            <div class="cover">
+                @foreach($publisher->book as $y)
                     <div class="card">
                     <img src={{$y->image}} alt="Avatar" style="width:160px">
                         <div class="container">
@@ -23,10 +22,9 @@
                     </div>
 
             @endforeach
-            </div> --}}
+            </div>
 
         </div>
 
-    @endforeach
 
 @endsection

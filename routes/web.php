@@ -23,21 +23,11 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/book_detail/{id}', [BookController::class, 'find']);
-
-
-
-
-
 
 Route::get('/publisher', [PublisherController::class, 'showAll']);
-
-
+Route::get('/publisher_detail/{id}', [PublisherController::class, 'find']);
 Route::get('/category/{id}', [CategorieController::class, 'index']);
-
-
 Route::get('/contact', [ContactController::class, 'showCategorie']);
-
 Route::get('/', [BookController::class, 'showAll']);
-
+Route::get('/book_detail/{id}', [BookController::class, 'find']);
 
