@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Books;
-use App\Models\Categories;
+use App\Models\books;
+use App\Models\categories;
 use GuzzleHttp\Psr7\Request;
 
 class BookController extends Controller

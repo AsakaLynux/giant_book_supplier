@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Books;
-use App\Models\Categories;
-use App\Models\Publisher;
+use App\Models\books;
+use App\Models\categories;
+use App\Models\publisher;
 use Illuminate\Http\Request;
 
 class PublisherController extends Controller
